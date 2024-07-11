@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/KrishnaPoddar1/mortgage-repayment-calculator.git)
-- Live Site URL: [Add live site URL here](https://krishnapoddar1.github.io/mortgage-repayment-calculator/)
+- Solution URL: [Solution URL here](https://github.com/KrishnaPoddar1/mortgage-repayment-calculator.git)
+- Live Site URL: [Live site URL here](https://krishnapoddar1.github.io/mortgage-repayment-calculator/)
 
 ## My process
 
