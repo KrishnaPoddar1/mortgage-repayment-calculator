@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="main">
+    <section class="container">
+      <section class="left">
+        <section class="flex-box">
+          <h1>Mortgage Calculator</h1>
+          <a href=""><p id="clear">Clear All</p></a>
+        </section>
+
+        <form id="myform">
+          <section class="box">
+          <label for="amount">Mortgage Amount</label>
+          <section class="b4">
+            <input type="number" id="amount" value="">
+            <button class="left-btn">£</button>
+          </section>
+          <p class="error"></p>
+        </section>
+        <section class="flex-box">
+          <section class="box">
+            <label for="term">Mortgage Term</label>
+            <section class="b4">
+              <input type="number" id="term">
+              <button class="right-btn">years</button>
+            </section>
+            <p class="error"></p>
+          </section>
+          <section class="box">
+            <label for="rate">Interest Rate</label>
+            <section class="b4">
+              <input type="number" id="rate" step="0.01">
+              <button class="right-btn">%</button>
+            </section>
+            <p class="error"></p>
+          </section>
+        </section>
+        <section class="box">
+          <label for="">Mortgage Type</label>
+          <section class="b" id="radio1">
+            <input type="radio" name="mortgage-type" value="repayment" id="repayment"><label for="repayment">Repayment</label>
+          </section>
+          <section class="b" id="radio2">
+            <input type="radio" name="mortgage-type" value="interestOnly" id="interestOnly"><label for="interestOnly">Interest Only</label>
+          </section>
+          <p class="error"></p>
+        </section>
+        <button type="submit"><img src="./assets/images/icon-calculator.svg" alt="icon-calculator"><b>Calculate Repayments</b></button>
+        </form>
+      </section>
+      <section class="right">
+        <!-- Empty results start -->
+        <section class="empty">
+          <img src="./assets/images/illustration-empty.svg" alt="epmty calculator">
+          <p><b>Results shown here</b></p>
+          <p class="light">Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+        </section>
+        <!-- Empty results end -->
+         <!-- Completed results start -->
+        <section class="complete hidden">
+          <p><b>Your results</b></p>
+          <p class="light">Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
+          <section class="resbox">
+            <section class="b1">
+              <p class="light">Your monthly repayments</p>
+              <p class="lime" id="monthlyRepayment"></p>
+            </section>
+            <section class="b2">
+            <p class="light">Total you'll repay over the term</p>
+            <p id="totalRepayment"></p>
+            </section>
+          </section>
+        </section>
+        <!-- Completed results end -->
+      </section>
+    </section>
+  </main>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
